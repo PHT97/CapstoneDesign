@@ -227,7 +227,7 @@ public class  ResultActivity extends AppCompatActivity {
                 });
         System.out.print(list);
         loca = map.get(list.get(0));
-        resultGu.setText(list.get(0));
+        resultGu.setText("① " + list.get(0));
 
         initWebView();
         rev.setOnClickListener(new View.OnClickListener() {
@@ -236,12 +236,12 @@ public class  ResultActivity extends AppCompatActivity {
                 if(loca == map.get(list.get(2))){
                     loca = map.get(list.get(1));
                     mWebView.loadUrl(loca);
-                    resultGu.setText(list.get(1));
+                    resultGu.setText("② " + list.get(1));
                 }
                 else if(loca == map.get(list.get(1))){
                     loca = map.get(list.get(0));
                     mWebView.loadUrl(loca);
-                    resultGu.setText(list.get(0));
+                    resultGu.setText("① " + list.get(0));
                 }
 
             }
@@ -253,12 +253,12 @@ public class  ResultActivity extends AppCompatActivity {
                 if(loca == map.get(list.get(0))){
                     loca = map.get(list.get(1));
                     mWebView.loadUrl(loca);
-                    resultGu.setText(list.get(1));
+                    resultGu.setText("② " + list.get(1));
                 }
                 else if(loca == map.get(list.get(1))){
                     loca = map.get(list.get(2));
                     mWebView.loadUrl(loca);
-                    resultGu.setText(list.get(2));
+                    resultGu.setText("③ " + list.get(2));
                 }
 
             }

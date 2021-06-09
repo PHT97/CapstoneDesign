@@ -356,9 +356,9 @@ public class LocationAuthActivity extends AppCompatActivity implements OnMapRead
                 LatLng point = new LatLng(Double.parseDouble(latitude), Double.parseDouble(longitude));
                 // 마커 생성
                 Marker marker = new Marker();
-                marker.setPosition(point);
+                //marker.setPosition(point);
                 // 마커 추가
-                marker.setMap(naverMap);
+               // marker.setMap(naverMap);
 
                 // 해당 좌표로 화면 줌
                 //naverMap.moveCamera(CameraUpdateFactory.newLatLngZoom(point,15));

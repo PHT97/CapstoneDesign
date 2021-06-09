@@ -71,14 +71,16 @@ public class ChartActivity extends AppCompatActivity {
                 .setArrowSize(10)
                 .setBackgroundColor(0xAA434343)
                 .setArrowOrientation(ArrowOrientation.TOP)
-                .setArrowPosition(0.847f)
+                .setArrowPosition(0.93f)
                 .setArrowVisible(true)
                 .setWidthRatio(0.8f)
-                .setHeight(65)
+                .setHeight(150)
                 .setTextSize(15f)
                 .setTextColor(0xAAFFFFFF)
                 .setCornerRadius(9f)
-                .setText("먼저 오픈채팅을 생성하셨나요?")
+                .setText("선택한 지표들의 평균이 가장 높은 상위 3개의 구를 레이더 차트로 데이터 시각화.\n" +
+                        "\n" +
+                        "선택한 지표한 대한 상위 7개 구를 막대 그래프로 데이터 시각화")
                 .setBalloonAnimation(BalloonAnimation.NONE)
                 .build();
         ballonbutton.setOnClickListener(new View.OnClickListener() {

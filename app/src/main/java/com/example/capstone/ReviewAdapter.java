@@ -96,7 +96,6 @@ public class ReviewAdapter extends RecyclerView.Adapter<com.example.capstone.Rev
 
         String title = mDataset.get(position).getTitle(); //*************** 추가 ****************
 
-        ImageView userImageView = cardView.findViewById(R.id.userImageView);
         TextView userNameTextView = cardView.findViewById(R.id.userNameTextView);
 
         TextView locationTextView = cardView.findViewById(R.id.locationTextView5);
@@ -106,26 +105,6 @@ public class ReviewAdapter extends RecyclerView.Adapter<com.example.capstone.Rev
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        FirebaseStorage storage = FirebaseStorage.getInstance("gs://capstonedesign-d1ced.appspot.com/");
-        StorageReference storageReference = storage.getReference();
-
-        storageReference.child("users/" + uid + "/profileImage.jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Glide.with(activity)
-                        .load(uri)
-                        .centerCrop()
-                        .override(100)
-                        .into(userImageView);
-                Log.e("profileImage", activity.toString());
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                userImageView.setImageResource(R.drawable.ic_baseline_person_24);
-                // Toast.makeText(getApplicationContext(), "실패", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         userNameTextView.setText(name);
         LinearLayout contentLayout = cardView.findViewById(R.id.contentsLayout2);

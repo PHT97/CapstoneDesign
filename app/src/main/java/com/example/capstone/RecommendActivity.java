@@ -430,14 +430,6 @@ public class RecommendActivity extends AppCompatActivity {
 
                                     }
 
-                                    intent.putExtra("m1",regu.get(0));
-                                    intent.putExtra("m2",regu.get(1));
-                                    intent.putExtra("m3",regu.get(2));
-                                    intent.putExtra("sel",sel);
-                                    intent.putExtra("chart",chart);
-                                    intent.putExtra("gu",gu);
-                                    startActivity(intent);
-
                                 }
                             });
                         } else {

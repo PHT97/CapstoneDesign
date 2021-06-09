@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.icu.text.IDNA;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,9 +42,16 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ArrayList<ReviewInfo> reviewList;
 
+    private TextView goToReviewTextView, goToInfoTextView;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        goToReviewTextView = findViewById(R.id.goToReviewTextView);
+        goToInfoTextView = findViewById(R.id.infoButton);
+        goToReviewTextView.setText(Html.fromHtml("<u>" + goToReviewTextView.getText() + "</u>"));
+        goToInfoTextView.setText(Html.fromHtml("<u>" + goToInfoTextView.getText() + "</u>"));
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);

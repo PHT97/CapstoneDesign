@@ -99,11 +99,11 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //배경 터치 시 키보드 숨김
-    public boolean onTouchEvent(MotionEvent event) {
-        InputMethodManager manager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-        manager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-        return true;
-    }
+//    //배경 터치 시 키보드 숨김
+//    public boolean onTouchEvent(MotionEvent event) {
+//        InputMethodManager manager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+//        manager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+//        return true;
+//    }
 
 }

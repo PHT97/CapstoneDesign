@@ -19,7 +19,7 @@
             android:layout_marginTop="10dp"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/logo" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_recommend_24"/>
+                android:src="@drawable/ic_baseline_recommend_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -38,27 +38,27 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="4dp"
                 android:text="추천페이지"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/recommendButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="추천받기"
+            android:layout_height="60dp"
+            android:text="제2의 동네 찾으러가기"
             android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_assignment_24"/>
+                android:src="@drawable/ic_baseline_assignment_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="4dp"
                 android:text="게시판"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/goToReviewTextView"
@@ -76,26 +76,26 @@
                 android:layout_marginTop="4dp"
                 android:gravity="end"
                 android:text="더보기"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_account_box_24"/>
+                android:src="@drawable/ic_baseline_account_box_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,16 +103,19 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="4dp"
                 android:text="마이페이지"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/infoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="이동하기"
+                android:textSize="15sp" />
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/infoButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="마이페이지로 이동"
-            android:textSize="15sp" />
 
     </LinearLayout>
 

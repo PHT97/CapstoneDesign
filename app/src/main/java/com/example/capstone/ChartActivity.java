@@ -78,9 +78,9 @@ public class ChartActivity extends AppCompatActivity {
                 .setTextSize(15f)
                 .setTextColor(0xAAFFFFFF)
                 .setCornerRadius(9f)
-                .setText("선택한 지표들의 평균이 가장 높은 상위 3개의 구를 레이더 차트로 데이터 시각화.\n" +
+                .setText("● 선택한 지표들의 평균이 가장 높은 상위 3개의 구를 레이더 차트로 데이터 시각화.\n" +
                         "\n" +
-                        "선택한 지표한 대한 상위 7개 구를 막대 그래프로 데이터 시각화")
+                        "● 선택한 지표 각각에 대해 상위 7개 구를 막대 그래프로 데이터 시각화")
                 .setBalloonAnimation(BalloonAnimation.NONE)
                 .build();
         ballonbutton.setOnClickListener(new View.OnClickListener() {
@@ -202,6 +202,8 @@ public class ChartActivity extends AppCompatActivity {
         l.setYEntrySpace(5f);
 
          */
+
+
     }
     private void setData(){
         // BarChart
@@ -257,6 +259,7 @@ public class ChartActivity extends AppCompatActivity {
 
 
     }
+
     public static class MyPagerAdapter extends FragmentPagerAdapter {
         private static int NUM_ITEMS = 3;
 

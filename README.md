@@ -36,12 +36,16 @@
 
 #### 2.3 결과물
 * 회원가입 및 로그인
-
+![1](https://user-images.githubusercontent.com/71217094/122054786-f932d480-ce22-11eb-9b27-4dccce866b46.PNG)
 * 메인 화면 및 마이페이지
+![2](https://user-images.githubusercontent.com/71217094/122054805-fdf78880-ce22-11eb-9dc7-aad11c427d1d.PNG)
 * 거주 후기 게시판
+![3](https://user-images.githubusercontent.com/71217094/122054834-0354d300-ce23-11eb-805c-65afe0d0ea87.PNG)
 * 게시글 작성 및 검색
+![4](https://user-images.githubusercontent.com/71217094/122054847-05b72d00-ce23-11eb-9d7b-b52d9a5c55b9.PNG)
 * 추천페이지 및 상세결과
-
+![5](https://user-images.githubusercontent.com/71217094/122054853-06e85a00-ce23-11eb-8af6-595b746de8ac.PNG)
+![6](https://user-images.githubusercontent.com/71217094/122054863-08b21d80-ce23-11eb-80b3-87651675f076.PNG)
 
 
 

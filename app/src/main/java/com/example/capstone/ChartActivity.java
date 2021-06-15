@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.components.XAxis;
@@ -251,7 +253,7 @@ public class ChartActivity extends AppCompatActivity {
         barchart.setPinchZoom(false);
         barchart.setScaleEnabled(false);
         barchart.setDoubleTapToZoomEnabled(false);
-        barchart.animateY(500); // 그래프 애니메이션
+        barchart.animateY(800, Easing.EaseInCubic); // 그래프 애니메이션
         barchart.setData(barData);
 
 

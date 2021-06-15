@@ -70,7 +70,7 @@ public class FirstFragment extends Fragment {
         String[] label = new String[] {"생활·편의·교통","교육","복지 문화","자연","안전"};
         setData();
 
-        // radarChart.animateXY(1000,1000, Easing.EaseInOutQuad,Easing.EaseInOutQuad);
+        radarChart.animateXY(1000,1000, Easing.EaseInOutQuad,Easing.EaseInOutQuad);
 
         XAxis xAxis = radarChart.getXAxis();
         xAxis.setTextSize(12f);
